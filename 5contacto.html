@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="imagenes/tiranosaurio.ico" type="image/x-icon">
+    <!-- link de animation.css/CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- link animacion AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>SucuRex</title>
+</head>
+
+<body>
+    <!-- Inicia header -->
+    <div class="zona-1">
+        <header class="encabezado">
+            <div>
+                <img src="imagenes/dinosaurio.png" alt="logo" width="10%" height="auto"
+                    class="animate__animated animate__backInLeft">
+                <h1 class="animate__animated animate__bounce">Vivero SucuRex</h1>
+                <img src="imagenes/planta.png" alt="plantalo" width="10%" height="auto"
+                    class="animate__animated animate__backInRight">
+            </div>
+            <hr>
+            <nav class="background-nav">
+                <ul>
+                    <li><a href="1index.html">Inicio</a></li>
+                    <li><a href="2servicios.html">Servicios</a></li>
+                    <li><a href="3productos.html">Productos </a></li>
+                    <li> <a href="4nosotros.html">Nosotros</a></li>
+                    <li> <a href="5contacto.html">Contacto </a></li>
+                    <li> <a href="https://es.wikipedia.org/wiki/Suculenta" target="_blank">Que es una suculenta? </a>
+                    </li>
+                </ul>
+                <!--link del logo de whatsaap solo de prueba. Buscar como se linkea a un numero en particular-->
+                <a class="nav-logo" href="https://web.whatsapp.com/" target="_blank">
+                    <img src="imagenes/whatsapp.png" alt="whatsaap" width="50" height="autoplay">
+                </a>
+            </nav>
+        </header>
+    </div>
+    <!-- fin header  -->
+    <!-- inicia pseudo-main -->
+    <div class="zona-2">
+        <section class="contacto">
+            <h2>Contacto</h2>
+        </section>
+    </div>
+    <section class="zona-2-desarrollo">
+        <section class="ficha">
+            <div data-aos="zoom-out" data-aos-offset="200" data-aos-delay="50" data-aos-easing="ease-in-out"
+                data-aos-duration="600">
+                <h3>Contacto</h3>
+                <ul>
+                    <li>Mail:sucurex_vivero@gmail.com</li>
+                    <li>Telefono: 1146980054</li>
+                    <li>Estamos en:</li>
+                    <li>
+                        <p>Av.Rivadavia 1456. CABA</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105062.72944038223!2d-58.453165314624016!3d-34.62412562970116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca440ec19097%3A0x30b34282ae8fae18!2sParque%20Rivadavia!5e0!3m2!1ses-419!2sar!4v1648933887335!5m2!1ses-419!2sar"
+                            width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </li>
+                    <li>Horario de atencion: 9 a 17 hs (corrido).</li>
+                    <li>Escribinos por Whatsaap</li>
+                    <li>
+                        <p>
+                            Seguinos en redes sociales y aprovecha nuestras promos exclusivas!!!
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </section>
+    <section class="zona-5">
+        <div class="separador3"></div>
+    </section>
+    <footer class="zona-6">
+        <!--FORMULARIO-->
+        <div class="form-ubicacion">
+            <form>
+                <h3>Consultenos</h3>
+                <ul>
+                    <li>
+                        <label for="name">Nombre: </label>
+                        <input type="text" name="Nombre">
+                    </li>
+                    <li>
+                        <label for="mail">Mail:</label>
+                        <input type="text" name="mail">
+                    </li>
+                    <li>
+                        <label for="phone">Telefono:</label>
+                        <input type="text" name="phone">
+                    </li>
+                    <li>
+                        <!--La etiqueta "textarea" se usa sola, es decir no se usa con input-->
+                        <!--Placeholder sirve para que la referencia que quiero poner se sobreescriba con el mensaje del usuario-->
+                        <p>Dejanos un mensaje:</p>
+                        <textarea name="message" placeholder="Describe el asunto y tu consulta. Gracias"></textarea>
+                    </li>
+                </ul>
+                <pre>                                      <input type="submit" value="Enviar"></pre>
+            </form>
+            <!--fin FORMULARIO-->
+            <!--UBICACION -->
+            <div class="mapa">
+                <h3>Donde estamos</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105062.72944038223!2d-58.453165314624016!3d-34.62412562970116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca440ec19097%3A0x30b34282ae8fae18!2sParque%20Rivadavia!5e0!3m2!1ses-419!2sar!4v1648933887335!5m2!1ses-419!2sar"
+                    width="100%" height="80%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- fin ubicacion -->
+        </div>
+        <!--REDES-->
+        <section class="redes">
+            <h3> <strong>Seguinos!!!</strong></h3>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="imagenes/instagram.png" alt="instagram" width="50" height="50">
+            </a>
+            <a href="https://m.facebook.com/login/?locale=es_ES" target="_blank">
+                <img src="imagenes/facebook.png" alt="facebook" width="50" height="50">
+            </a>
+        </section>
+        <!--fin redes-->
+        <hr>
+        <!--PIECITO-->
+        <div class="pie">
+            <small>Todos los derechos reservados/Vivero SucuRex 2022
+                <sup>®</sup>
+            </small>
+        </div>
+        <!--fin PIECITO-->
+    </footer>
+    <!-- fin footer -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

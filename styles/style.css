@@ -1,0 +1,1445 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,600;1,400;1,500&display=swap');
+
+html {
+    font-family: 'EB Garamond', serif;
+    font-size: 62, 5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+/* INICIA INDEX.HTML */
+body {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-auto-rows: auto;
+    grid-template-areas: "zona-1 zona-1 zona-1" "zona-2 zona-2 zona-2" "zona-2-desarrollo .zona-2-desarrollo .zona-2-desarrollo" "zona-3 zona-3 zona-4" "zona-5 zona-5 zona-5" "zona-6 zona-6 zona-6";
+    overflow-x: hidden;
+}
+
+/*--------- Inicia zona-1 (header y nav)------- */
+.zona-1 {
+    grid-area: zona-1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 100%;
+    height: auto;
+}
+
+/* inicia header */
+.encabezado div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background: rgb(243, 255, 218);
+    background: linear-gradient(0deg, rgba(243, 255, 218, 1) 0%, rgba(221, 255, 188, 1) 100%);
+}
+
+.encabezado div h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+    color: #52734D;
+}
+
+.encabezado div img {
+    padding: 5% 0% 5% 0%;
+}
+.animate__animated .animate__backInLeft{
+    --animate-duration: 2s;
+}
+
+
+/* fin header */
+/* inicia nav */
+
+.background-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2% 0;
+    background-color: #ddffbcd4;
+    width: 100%;
+    height: 10vh;
+}
+
+.background-nav ul li {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    margin: 5px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.background-nav ul li a {
+    color: #52734D;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.nav-logo {
+    position: fixed;
+    margin-top: 20%;
+    padding-left: 90%;
+    z-index: 2;
+}
+
+/* fin nav */
+/* ------------fin zona-1 header y nav-------- */
+/* -----------inicia pseudo-main Zona-2-------*/
+.zona-2 {
+    grid-area: zona-2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    width: 100%;
+    height: auto;
+}
+
+/* inicia presentacion portada */
+.zona-2 .presentacion {
+    background-image: url(https://images.pexels.com/photos/2133092/pexels-photo-2133092.jpeg?cs=srgb&dl=pexels-quang-nguyen-vinh-2133092.jpg&fm=jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 20vh;
+    padding: 2% 0% 50% 0%;
+}
+
+.presentacion div h2 {
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 5%;
+    padding-left: 5%;
+    font-size: 2.5rem;
+    line-height: 1.6rem;
+    width: 100%;
+    height: auto;
+}
+
+.zona-2-desarrollo {
+    grid-area: zona-2-desarrollo;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 9;
+    background: rgb(167, 189, 145);
+    background: linear-gradient(0deg, rgba(167, 189, 145, 0.774) 2%, rgba(173, 194, 169, 0.772) 61%);
+    width: 100%;
+    height: auto;
+    padding: 4% 1%;
+}
+
+.zona-2-desarrollo p {
+    color: #52734D;
+    line-height: 2.8rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 550;
+    padding: 0.5% 3%;
+}
+
+.zona-2-desarrollo h3 {
+    color: #466142;
+    line-height: 4.2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 1%;
+}
+
+/* fin presentacion/portada */
+/*------ fin zona-2 pseudo-main------ */
+/*------inicia zona-3 temporada----- */
+
+.zona-3 {
+    grid-area: zona-3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 9;
+    grid-row-end: 12;
+    width: 100%;
+    height: auto;
+    background-color: #DDFFBC;
+}
+
+/*inicia otoño */
+.autumn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 192, 203, 0.797);
+}
+
+.autumn .temporada {
+    background-image: url(https://cdn.pixabay.com/photo/2017/10/02/21/56/sheet-2810487_1280.jpg);
+    opacity: 0.75;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10%;
+    width: 100%;
+    height: auto;
+}
+
+.temporada div {
+    width: 100%;
+    height: auto;
+}
+
+.temporada div p {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin: 4.5% 2%;
+}
+
+/* fin otoño */
+/* -----------fin zona-3 temporada--------------- */
+/* -----------inicia zona-4 aside/videos----------*/
+
+.zona-4 {
+    grid-area: zona-4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 9;
+    grid-row-end: 12;
+    width: 100%;
+    height: auto;
+    background: rgb(173, 175, 173);
+    background: linear-gradient(0deg, rgba(173, 175, 173, 1) 2%, rgba(173, 194, 169, 1) 96%);
+}
+
+.zona-4 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2% 4% 2%;
+    width: 90%;
+    height: auto;
+    margin: 4% 8% 6% 6%;
+}
+
+.zona-4 div h3 {
+    line-height: 3rem;
+    font-size: 1.2rem;
+    color: rgb(80, 78, 78);
+    text-align: center;
+}
+
+/* ---------fin zona-4--------------- */
+/* ---------inicia zona-5 pasos----- */
+
+.zona-5 {
+    grid-area: zona-5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 12;
+    grid-row-end: 16;
+    background-color: #FEFFDE;
+    width: 100%;
+    height: auto;
+}
+
+.pasos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.pasos div {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    color: #52734D;
+    display: inline-block;
+    text-align: center;
+    margin: 5%;
+
+}
+
+.separador1 {
+    width: 90%;
+    height: auto;
+    background-image: url(https://images.pexels.com/photos/3144214/pexels-photo-3144214.jpeg?cs=srgb&dl=pexels-cole-keister-3144214.jpg&fm=jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 5%;
+}
+
+/*-------------Fin zona-5 pasos-----------*/
+/*--------- inicia zona-6 footer-------- */
+.zona-6 {
+    grid-area: zona-6;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 16;
+    grid-row-end: 21;
+    width: 100%;
+    height: auto;
+}
+
+/* inicia formulario */
+footer .form-ubicacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer .form-ubicacion form {
+    background-color: #ddffbc;
+    padding: 5%;
+    width: 50%;
+    height: 31vh;
+}
+
+footer .form-ubicacion form h3 {
+    text-align: center;
+    color: green;
+    font-style: italic;
+}
+
+footer .form-ubicacion form ul li {
+    list-style: none;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+/*----FIn formulario*/
+/*-------Inicia mapa y redes----*/
+footer .mapa {
+    color: #172415;
+    background-color: #adc2a9c1;
+    padding: 5% 10%;
+    width: 40%;
+    height: 31vh;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+footer .redes {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #FEFFDE;
+    padding: 5%;
+    width: 90%;
+    height: auto;
+}
+footer .redes a {
+    padding-left: 10%;
+}
+
+footer .redes h3 {
+    color: #52734D;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6rem;
+    font-size: 2rem;
+}
+
+/*-----Fin mapa y redes---*/
+/*---Inicio piecito---*/
+footer .pie {
+    background-color: #99A799;
+    line-height: 1.6rem;
+}
+
+/*----Fin piecito---*/
+/*Fin footer*/
+/*-------------FIN INDEX--------- */
+/* -------------INICIA SERVICIOS.HTML---------- */
+/* --------Inicia zona-2 servicios-------- */
+/* inicia servicios/portada */
+.zona-2 .servicios {
+    background-image: url(https://images.pexels.com/photos/68470/pexels-photo-68470.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 20vh;
+    padding: 2% 0% 50% 0%;
+}
+
+.servicios div h2 {
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 5%;
+    padding-left: 5%;
+    font-size: 2.5rem;
+    line-height: 1.6rem;
+    width: 100%;
+    height: auto;
+}
+.zona-2-desarrollo h3{
+    color: #466142;
+    line-height: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1%;
+} 
+.zona-2-desarrollo h4 {
+    color: #466142;
+    line-height: 3rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1%;
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+.zona-2-desarrollo ul {
+    list-style: circle;
+    font-size: 1.2rem;
+    color: #52734D;
+    line-height: 2.8;
+    font-style: italic;
+    font-weight: 550;
+    padding: 3%;
+}
+
+/* fin servicios portada */
+/* ----------inicia capacitacion-------- */
+/* -----inicio zona-3------ */
+.zona-3 .capacitacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+}
+
+.zona-3 .capacitacion h5 {
+    font-size: 1.4rem;
+    line-height: 2;
+    text-align: center;
+    font-style: italic;
+    color: #466142;
+    padding: 6% 0 4% 0;
+}
+
+.capacitacion ul {
+    list-style: circle;
+    font-size: 1.2rem;
+    color: #52734D;
+    line-height: 1.6;
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+    padding: 3%;
+}
+
+/* -------fin zona 3-------- */
+/* -------inicia zona-4----- */
+.zona-4 .capa {
+    font-size: 1.2rem;
+    color: #466142;
+    line-height: 1.6;
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 10%;
+    padding-top: 5%;
+}
+
+.zona-4 .capa h3 {
+    font-size: 1.8rem;
+    line-height: 2;
+    text-align: center;
+    font-style: italic;
+    color: #466142;
+}
+
+.zona-4 .capa h4 {
+    font-size: 1.5rem;
+    line-height: 2;
+    text-align: center;
+    font-style: italic;
+    color: #466142;
+    padding: 8% 0 20% 0;
+}
+
+.zona-5 .boton {
+    width: 90%;
+    height: auto;
+    background-image: url(https://images.pexels.com/photos/1379627/pexels-photo-1379627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: bottom;
+    background-size: cover;
+    padding: 5%;
+    text-align: center;
+}
+.boton a {
+    background-color: #DDFFBC;
+    text-decoration: none;
+    color: #52734D;
+    padding: 2%;
+    border: 2px solid #52734D;
+    border-radius: 20px;
+}
+.boton a:hover{
+    background-color: #1a47136c;
+    color: #DDFFBC;
+    padding: 4%;
+    border: 4px solid #DDFFBC;
+    border-radius: 20px;
+    font-size: 2rem;
+    transform: scale(1);
+    transition: all 2s;
+}
+
+/*-------fin zona-4------ */
+/*  --------fin capacitacion-------*/
+/*-----------INICIA PRODUCTOS.HTML------- */
+/* ------inicia zona-2 productos---- */
+.zona-2 .presentacion-productos {
+    background-image: url(https://images.pexels.com/photos/4503823/pexels-photo-4503823.jpeg?cs=srgb&dl=pexels-cottonbro-4503823.jpg&fm=jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 20vh;
+    padding: 2% 0% 50% 0%;
+}
+
+.presentacion-productos div h2 {
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 5%;
+    font-size: 2.5rem;
+    padding-left: 5%;
+    line-height: 1.6rem;
+    width: 100%;
+    height: auto;
+}
+
+/* fin zona-2 productos */
+/* Inicia  zona-2-desarrollo galeria de productos */
+.sub-titulo {
+    padding: 5%;
+}
+
+.sub-titulo h3 {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    gap: 15px;
+    background-color: #99A799;
+}
+
+.galeria-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-container .item0 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery-container .item1 {
+    grid-row-start: 3;
+    grid-row-end: 5;
+
+}
+
+/* fin .zona-2-desarrollo galeria productos */
+/* inicia zona-3 nuestros productos */
+.zona-3 .nuestros-productos {
+    font-size: 1.2rem;
+    color: #466142;
+    line-height: 1.6;
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+    padding-top: 5%;
+    margin: 2%;
+}
+
+.zona-3 .nuestros-productos h3 {
+    font-size: 1.8rem;
+    line-height: 2.5;
+    text-align: center;
+    font-style: italic;
+    color: #466142;
+}
+
+/* FIN ZONA-3 NUESTROS-productos */
+/* inicia zona-4 publi-imagenes */
+.zona-4 .publi-imagenes {
+    padding: 5%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.publi-imagenes img {
+    padding: 5% 1%;
+}
+
+/* fin zona-4 publi-imagenes */
+/* Inicia zona-5 boton de descarga/separador */
+.boton2 {
+    width: 90%;
+    height: auto;
+    background-image: url(https://images.pexels.com/photos/2968327/pexels-photo-2968327.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center;
+    background-size: cover;
+    padding: 5%;
+    text-align: center;
+}
+
+.boton2 a {
+    background-color: #FEFFDE;
+    text-decoration: none;
+    color: green;
+    padding: 2%;
+    border: 2px solid green;
+    border-radius: 20px;
+}
+.boton2 a:hover{
+    background-color: #1a47136c;
+    color: #DDFFBC; 
+    padding: 4%;
+    border: 4px solid #DDFFBC; 
+    border-radius: 20px;
+    font-size: 2rem; 
+    transform: scale(1);
+    transition: all 2s;
+} 
+
+/* fin zona-5 boton de descarga/separador */
+/*----Fin publicidad productos------*/
+/* ------FIN PRODUCTOS.HTML----- */
+
+/*-------INICIO NOSOTROS HTML------*/
+
+/*------Comienza pseudo-main-----*/
+/*----comienza presentacion----*/
+/* inicia zona-2 nosotros */
+.presentacion-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    background-image: url(https://cdn.pixabay.com/photo/2017/03/22/08/07/singapore-zoo-2164309_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2% 0% 50% 0%;
+
+}
+
+.presentacion-nosotros div {
+    background-color: #52734d75;
+    padding: 0 2%;
+    margin-left: 2%;
+}
+
+.presentacion-nosotros div h2 {
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 3rem;
+    padding: 5%;
+    line-height: 1.6rem;
+}
+
+/*------Fin presentacion------*/
+.zona-2-desarrollo .somos {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+}
+
+.somos .rex {
+    width: 45%;
+    height: auto;
+    padding: 5% 0% 0% 5%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.somos .vivero {
+    width: 50%;
+    height: auto;
+    padding: 5% 5% 7.5% 5%;
+
+}
+
+.somos .vivero h3 {
+    text-align: center;
+    font-weight: bold;
+    line-height: 5rem;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.somos .vivero p {
+    text-align: center;
+    font-weight: lighter;
+    line-height: 2rem;
+    font-size: 1rem;
+}
+
+/*------Fin somos----*/
+/* -----------inicio zona-3------------- */
+.zona-3 .dino {
+    margin: 3%;
+}
+
+/* -----------fin zona-3----------------- */
+
+/* -----------inicio zona-4------------- */
+/*----comienzo impacto-----*/
+.impacto {
+    width: 100%;
+    height: 100%;
+    background-color: #FEFFDE;
+    padding: 5% 5% 7.5% 5%;
+
+}
+
+.impacto h3 {
+    text-align: center;
+    font-weight: bold;
+    line-height: 5rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #52734D;
+}
+
+.impacto p {
+    text-align: center;
+    font-weight: lighter;
+    line-height: 2rem;
+    font-size: 1rem;
+    padding-right: 7%;
+    padding-bottom: 3%;
+    color: #52734D;
+}
+
+.impacto ul {
+    list-style: none;
+    font-size: 1.1rem;
+    color: #52734D;
+    line-height: 1.6;
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+    padding: 3%;
+}
+
+/*-------Fin impacto-----*/
+/* -----------fin zona-4------------- */
+/* -----------inicia zona-5--------- */
+/*-------comienzo separador-----*/
+.separador2 {
+    width: 90%;
+    height: auto;
+    background-image: url(https://images.pexels.com/photos/10701381/pexels-photo-10701381.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center;
+    background-size: cover;
+    padding: 5%;
+}
+
+/*-----Fin separador-----*/
+/*-------fin NOSOTROS HTML------*/
+/*-------INICIO CONTACTO HTML------*/
+/*---comienza presentacion contacto----*/
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    background-image: url(https://images.pexels.com/photos/2896280/pexels-photo-2896280.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2% 0% 50% 0%;
+
+}
+
+.contacto h2 {
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 3rem;
+    padding-left: 5%;
+    line-height: 1.6;
+}
+
+/*---fin presentacion contacto----*/
+
+/*-----Comienzo ficha-----*/
+.ficha {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.ficha div {
+    background-color: #feffdeb2;
+    padding: 5% 5% 8% 5%;
+}
+
+.ficha div h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 3;
+    color: #172415;
+    font-size: 1.8rem;
+}
+
+.ficha div ul li {
+    list-style: none;
+    text-align: center;
+    line-height: 1.8rem;
+    color: #1a4713;
+    font-size: 1.2rem;
+}
+
+.ficha div ul li p {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 5rem;
+}
+
+/*----fin ficha-----*/
+/*-------Comienzo separador----*/
+.separador3 {
+    width: 100%;
+    height: auto;
+    background-image: url(https://images.pexels.com/photos/8892905/pexels-photo-8892905.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-position: center;
+    background-size: cover;
+    padding: 10% 0;
+}
+
+/*------fin separador-----*/
+/*------FIN CONTACTO HTML-----*/
+
+/* @media queries */
+
+/* mobile */
+@media only screen and (max-width:450px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        overflow-x: hidden;
+    }
+    .encabezado div h1 {
+        font-size: 1.8rem;
+    }
+    .background-nav ul li a{
+        font-size: 0.5rem;
+    }
+    .nav-logo {
+        padding-left: 80%;
+    }
+    /* inicia ------index.html ------*/
+    /* inicia zona-2 presentacion y zona-2 desarrollo */
+    .presentacion div h2 {
+        font-size: 1.5rem;
+    }
+    .zona-2-desarrollo p {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+    }
+    .zona-2-desarrollo h3{
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    /* fin zona-2 */
+    /* inicia zona-3 temporada */
+    .zona-3 .autumn .temporada div {
+    width: 100%;
+    height: auto;
+    }
+
+    .temporada div p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    text-align: center;
+    }
+    /* fin zona-3 temporada */
+    /* inicia zona-4 videos informativos */
+    body .zona-4 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 12;
+        grid-row-end: 15;
+    }
+    .zona-4 div h3 {
+        line-height: 3rem;
+        font-size: 1.2rem;
+    }
+    /* fin zona-4 videos */
+    /* inicia zona-5 pasos */
+    .zona-5 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 15;
+        grid-row-end: 19;
+    }
+    .pasos div {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+    /* fin zona-5 pasos */
+    /* inicia zona-6 footer */
+    .zona-6 {
+        grid-row-start: 19;
+        grid-row-end: 25;
+    }
+    footer .form-ubicacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    footer .form-ubicacion form {
+        width: 100%;
+        height: auto;
+    }
+    footer .mapa {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        line-height: 2.5rem;
+    }
+    footer .mapa iframe{
+        width: 80%;
+        height: 60%;
+    }
+    footer .redes h3 {
+        line-height: 0.5rem;
+        font-size: 1.5rem;
+        padding-top: 5%;
+    }
+    footer .redes a {
+        padding-left: 10%;
+        padding-top: 5%;
+    }
+    /* fin zona-6 footer */
+    /* ---------fin index html------ */
+    /* ----inicia servicios.html--- */
+    
+    /* zona-2 servicios */
+
+    .servicios div h2 {
+        font-size: 1.5rem;
+    }
+    .zona-2-desarrollo h3{
+        line-height: 2rem;
+        font-size: 1.2rem;
+    } 
+    .zona-2-desarrollo h4 {
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+    
+    .zona-2-desarrollo ul {
+        list-style: circle;
+        font-size: 0.8rem;
+        line-height: 2;
+        font-weight: 400;
+    }
+    /* fin zona-2 */
+    /* ----------inicia capacitacion-------- */
+    /* -----inicio zona-3------ */
+    .zona-3 .capacitacion h5 {
+        font-size: 1rem;
+        line-height: 2;
+    }
+    .capacitacion ul {
+        font-size: 0.8rem;
+        line-height: 1.6;
+        font-weight: 400;
+    }
+    /* -------fin zona 3-------- */
+    /* fin servicios portada */
+    /* -------inicia zona-4----- */
+    .zona-4 .capa {
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: center;
+    }
+    .zona-4 .capa h3 {
+        font-size: 1.5rem;
+    }
+
+    .zona-4 .capa h4 {
+        font-size: 1.2rem;
+    }
+    /*-------fin zona-4------ */
+    /*-------inicio zona-5------ */
+    .zona-5 .imagenes-cursos{
+        display: flex;
+        flex-direction: row;
+    }
+    /* fin zona-5 */
+    /* -----------------FIN SERVICIOS.HTML----------- */
+    /* --------------INICIO PRODUCTOS.HTML----------- */
+    /* inicia zona-2 y zona-2 desarrollo galeria */
+    .presentacion-productos div h2 {
+        font-size: 1.8rem;
+    }
+    .sub-titulo h3 {
+        font-size: 1.5rem;
+    }
+    
+    .gallery-container {
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .gallery-container .item0{
+        display: none;
+    }
+    .gallery-container .item1{
+        display: none;
+    }
+    /* fin .zona-2-desarrollo galeria*/
+    /* inicia zona-3 nuestros productos */
+    .zona-3 .nuestros-productos {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .zona-3 .nuestros-productos h3 {
+        font-size: 1.5rem;
+    }
+    /* Fin ZONA-3 NUESTROS-productos */
+    /* -----------FIN PRODUCTOS.HTML------- */
+
+    /* --------INICIA NOSOTROS.HTML--------*/
+    /* inicia zona-2 presentacion */
+    .presentacion-nosotros div h2 {
+        font-size: 1.8rem;
+    }
+    /*------Fin presentacion------*/
+    /* inicia zona-2-desarrollo */
+    .zona-2-desarrollo .somos {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: stretch;
+        align-items: flex-start;
+    }
+
+    .somos .rex {
+        width: 90%;
+        height: auto;
+    }
+
+    .somos .vivero {
+        width: 90%;
+        height: auto;
+    }
+    /*------Fin zona-2-desarrollo----*/
+    /* -----------inicio zona-4------------- */
+    /*----comienzo impacto-----*/
+    .impacto {
+        width: 90%;
+        height: 100%;
+    }
+
+    .impacto h3 {
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+    }
+
+    .impacto p {
+        line-height: 2rem;
+        font-size: 0.8rem;
+    }
+
+    .impacto ul {
+        font-size: 1rem;
+    }
+    
+    .impacto img{
+        margin-left: 6%;
+    }
+    /*-------Fin impacto-----*/
+    /* -----------fin zona-4------------- */
+    /* FIN NOSOTROS-HTML */
+    /* INICIA CONTACTO.HTML */
+    .contacto h2 {
+        font-size: 1.8rem;
+    }
+    .ficha div h3 {
+        font-size: 1.5rem;
+    }
+    
+    .ficha div ul li {
+        font-size: 1.2rem;
+    }
+    
+    .ficha div ul li p {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    .ficha div ul li iframe {
+        width: 80%;
+        height: auto;
+    }
+    /* FIN CONTACTO.HTML */
+}
+
+ /* tablet */
+
+@media only screen and (min-width:451px) and (max-width:960px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+        overflow-x: hidden;
+    }
+    .encabezado div h1 {
+        font-size: 2.5rem;
+    }
+    .background-nav ul li a{
+        font-size: 0.8rem;
+        justify-items: center;
+    }
+    .nav-logo {
+        padding-left: 80%;
+    }
+    /* inicia ------index.html ------*/
+    /* inicia zona-2 presentacion y zona-2 desarrollo */
+    .presentacion div h2 {
+        font-size: 1.8rem;
+    }
+    .zona-2-desarrollo p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .zona-2-desarrollo h3{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    /* fin zona-2 */
+    /* inicia zona-3 temporada */
+    .zona-3 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .zona-3 .autumn{
+        width: 100%;
+        height: 100%;
+    }
+    .autumn .temporada {
+        width: 100%;
+        height: auto;
+    }
+    .temporada div p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    padding: 5%;
+    }
+    /* fin zona-3 temporada */
+    /* inicia zona-4 videos informativos */
+    body .zona-4 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        width: 100%;
+        height: auto;
+    }
+    .zona-4 div h3 {
+        line-height: 3rem;
+        font-size: 1.2rem;
+    }
+    .zona-4 div iframe{
+        width: 80%;
+        height:auto;
+    }
+    /* fin zona-4 videos */
+    /* inicia zona-5 pasos */
+    .zona-5 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 12;
+        grid-row-end: 16;
+    }
+    .pasos div {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+    /* fin zona-5 pasos */
+    /* inicia zona-6 footer */
+    .zona-6 {
+        grid-row-start: 16;
+        grid-row-end: 23;
+    }
+    footer .form-ubicacion {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        height: auto;
+    }
+    footer .form-ubicacion form {
+        width: 100%;
+        height: 40vh;
+    }
+    footer .mapa {
+        width: 100%;
+        height: 40vh;
+        text-align: center;
+        line-height: 2.5rem;
+    }
+    footer .mapa iframe{
+        width: 80%;
+        height: 60%;
+    }
+
+    footer .redes h3 {
+        line-height: 0.5rem;
+        font-size: 1.5rem;
+        padding-top: 5%;
+    }
+    footer .redes a {
+        padding-left: 10%;
+        padding-top: 5%;
+    }
+    footer .redes a img{
+        width: 40%;
+        height: auto;
+    }
+    /* fin zona-6 footer */
+    /* ---------fin index html------ */
+    /* ----inicia servicios.html--- */
+    
+    /* zona-2 servicios */
+
+    .servicios div h2 {
+        font-size: 1.8rem;
+    }
+    .zona-2-desarrollo h3{
+        line-height: 2rem;
+        font-size: 1.5rem;
+    } 
+    .zona-2-desarrollo h4 {
+        line-height: 2rem;
+        font-size: 1.2rem;
+    }
+    
+    .zona-2-desarrollo ul {
+        list-style: circle;
+        font-size: 1rem;
+        line-height: 2;
+        font-weight: 500;
+    }
+    /* fin zona-2 */
+    /* ----------inicia capacitacion-------- */
+    /* -----inicio zona-3------ */
+    .zona-3 .capacitacion h5 {
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+    .capacitacion ul {
+        font-size: 1rem;
+        line-height: 1.8;
+        font-weight: 500;
+        margin: 0 5%;
+        padding: 0 5%;
+    }
+    /* -------fin zona 3-------- */
+    /* fin servicios portada */
+    /* -------inicia zona-4----- */
+    .zona-4 .capa {
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    .zona-4 .capa h3 {
+        font-size: 1.5rem;
+    }
+
+    .zona-4 .capa h4 {
+        font-size: 1.2rem;
+    }
+    /*-------fin zona-4------ */
+    /*-------inicio zona-5------ */
+    .zona-5 .imagenes-cursos{
+        display: flex;
+        flex-direction: row;
+    }
+    /* fin zona-5 */
+    /* -----------------FIN SERVICIOS.HTML----------- */
+    /* --------------INICIO PRODUCTOS.HTML----------- */
+    /* inicia zona-2 y zona-2 desarrollo galeria */
+    .presentacion-productos div h2 {
+        font-size: 1.8rem;
+    }
+    .sub-titulo h3 {
+        font-size: 1.5rem;
+    }
+    
+    .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 250px;
+        gap: 12px;
+    }
+    .gallery-container .item0{
+        display: none;
+    }
+    .gallery-container .item1{
+        display: none;
+    }
+    /* fin .zona-2-desarrollo galeria*/
+    /* inicia zona-3 nuestros productos */
+    .zona-3 .nuestros-productos {
+        width: 100%;
+        height: 100%;
+    }
+    .zona-3 .nuestros-productos p {
+        padding: 0 10% 5% 0;
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 2;
+        text-align: center;
+    }
+
+    .zona-3 .nuestros-productos h3 {
+        font-size: 1.5rem;
+    }
+    /* Fin ZONA-3 NUESTROS-productos */
+    /* -----------FIN PRODUCTOS.HTML------- */
+
+    /* --------INICIA NOSOTROS.HTML--------*/
+    /* inicia zona-2 presentacion */
+    .presentacion-nosotros div h2 {
+        font-size: 1.8rem;
+    }
+    /*------Fin presentacion------*/
+    /* inicia zona-2-desarrollo */
+    .zona-2-desarrollo .somos {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: stretch;
+        align-items: flex-start;
+    }
+
+    .somos .rex {
+        padding: 2% 10% 2% 15% ;
+        width: 80%;
+        height: auto;
+    }
+
+    .somos .vivero {
+        width: 90%;
+        height: auto;
+    }
+    /*------Fin zona-2-desarrollo----*/
+    .zona-3 img {
+        width: 100%;
+        height: auto;
+        padding-top: 30%;
+    }
+    /* -----------inicio zona-4------------- */
+    /*----comienzo impacto-----*/
+    .impacto {
+        width: 90%;
+        height: 100%;
+    }
+
+    .impacto h3 {
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+    }
+
+    .impacto p {
+        padding: 5%;
+        line-height: 1.6rem;
+        font-size: 0.8rem;
+    }
+
+    .impacto ul {
+        font-size: 1rem;
+    }
+    
+    .impacto img{
+        margin-left: 6%;
+    }
+    /*-------Fin impacto-----*/
+    /* -----------fin zona-4------------- */
+    /* FIN NOSOTROS-HTML */
+    /* INICIA CONTACTO.HTML */
+    .contacto h2 {
+        font-size: 1.8rem;
+    }
+    .ficha div h3 {
+        font-size: 1.5rem;
+    }
+    
+    .ficha div ul li {
+        font-size: 1.2rem;
+    }
+    
+    .ficha div ul li p {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    /* FIN CONTACTO.HTML */
+}
