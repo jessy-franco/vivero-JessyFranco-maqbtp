@@ -12,26 +12,10 @@ html {
 }
 
 /* INICIA INDEX.HTML */
-body {
-    display: grid;
-    grid-template-columns: repeat(3 1fr);
-    grid-auto-rows: auto;
-    grid-template-areas: "zona-1 zona-1 zona-1" "zona-2 zona-2 zona-2" "zona-2-desarrollo .zona-2-desarrollo .zona-2-desarrollo" "zona-3 zona-3 zona-4" "zona-5 zona-5 zona-5" "zona-6 zona-6 zona-6";
-    overflow-x: hidden;
-}
-
-/*--------- Inicia zona-1 (header y nav)------- */
-.zona-1 {
-    grid-area: zona-1;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    width: 100%;
-    height: auto;
-}
-
 /* inicia header */
+header{
+    font-family: 'EB Garamond', serif;
+}
 .encabezado div {
     display: flex;
     justify-content: space-around;
@@ -44,7 +28,7 @@ body {
 
 .encabezado div h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-style: italic;
     color: #52734D;
 }
@@ -60,12 +44,13 @@ body {
 /* fin header */
 /* inicia nav */
 
+.logotipo{
+    visibility: hidden;
+}
 .background-nav {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     padding: 2% 0;
-    background-color: #ddffbcd4;
     width: 100%;
     height: 10vh;
 }
@@ -83,19 +68,20 @@ body {
     color: #52734D;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2rem;
-}
+    font-size: 1rem;
+} 
 
-.nav-logo {
-    position: fixed;
-    margin-top: 20%;
-    padding-left: 90%;
-    z-index: 2;
-}
 
 /* fin nav */
 /* ------------fin zona-1 header y nav-------- */
 /* -----------inicia pseudo-main Zona-2-------*/
+main {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-auto-rows: auto;
+    grid-template-areas:"zona-2 zona-2 zona-2" "zona-2-desarrollo .zona-2-desarrollo .zona-2-desarrollo" "zona-3 zona-3 zona-4" "zona-5 zona-5 zona-5" "zona-6 zona-6 zona-6";
+    overflow-x: hidden;
+}
 .zona-2 {
     grid-area: zona-2;
     grid-column-start: 1;
@@ -115,6 +101,12 @@ body {
     width: 100%;
     height: 20vh;
     padding: 2% 0% 50% 0%;
+}
+.whatsaap-logo {
+    position: fixed;
+    margin-top: 20%;
+    padding-left: 90%;
+    z-index: 2;
 }
 
 .presentacion div h2 {
@@ -871,575 +863,3 @@ footer .pie {
 /*------fin separador-----*/
 /*------FIN CONTACTO HTML-----*/
 
-/* @media queries */
-
-/* mobile */
-@media only screen and (max-width:450px) {
-    body {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-auto-rows: auto;
-        overflow-x: hidden;
-    }
-    .encabezado div h1 {
-        font-size: 1.8rem;
-    }
-    .background-nav ul li a{
-        font-size: 0.5rem;
-    }
-    .nav-logo {
-        padding-left: 80%;
-    }
-    /* inicia ------index.html ------*/
-    /* inicia zona-2 presentacion y zona-2 desarrollo */
-    .presentacion div h2 {
-        font-size: 1.5rem;
-    }
-    .zona-2-desarrollo p {
-        font-size: 0.8rem;
-        line-height: 1.5rem;
-    }
-    .zona-2-desarrollo h3{
-        font-size: 1.2rem;
-        line-height: 2rem;
-    }
-
-    /* fin zona-2 */
-    /* inicia zona-3 temporada */
-    .zona-3 .autumn .temporada div {
-    width: 100%;
-    height: auto;
-    }
-
-    .temporada div p {
-    font-size: 0.8rem;
-    line-height: 1rem;
-    text-align: center;
-    }
-    /* fin zona-3 temporada */
-    /* inicia zona-4 videos informativos */
-    body .zona-4 {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 12;
-        grid-row-end: 15;
-    }
-    .zona-4 div h3 {
-        line-height: 3rem;
-        font-size: 1.2rem;
-    }
-    /* fin zona-4 videos */
-    /* inicia zona-5 pasos */
-    .zona-5 {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 15;
-        grid-row-end: 19;
-    }
-    .pasos div {
-        font-size: 1.5rem;
-        line-height: 3rem;
-    }
-    /* fin zona-5 pasos */
-    /* inicia zona-6 footer */
-    .zona-6 {
-        grid-row-start: 19;
-        grid-row-end: 25;
-    }
-    footer .form-ubicacion {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        width: 100%;
-        height: auto;
-    }
-    footer .form-ubicacion form {
-        width: 100%;
-        height: auto;
-    }
-    footer .mapa {
-        width: 100%;
-        height: auto;
-        text-align: center;
-        line-height: 2.5rem;
-    }
-    footer .mapa iframe{
-        width: 80%;
-        height: 60%;
-    }
-    footer .redes h3 {
-        line-height: 0.5rem;
-        font-size: 1.5rem;
-        padding-top: 5%;
-    }
-    footer .redes a {
-        padding-left: 10%;
-        padding-top: 5%;
-    }
-    /* fin zona-6 footer */
-    /* ---------fin index html------ */
-    /* ----inicia servicios.html--- */
-    
-    /* zona-2 servicios */
-
-    .servicios div h2 {
-        font-size: 1.5rem;
-    }
-    .zona-2-desarrollo h3{
-        line-height: 2rem;
-        font-size: 1.2rem;
-    } 
-    .zona-2-desarrollo h4 {
-        line-height: 2rem;
-        font-size: 1rem;
-    }
-    
-    .zona-2-desarrollo ul {
-        list-style: circle;
-        font-size: 0.8rem;
-        line-height: 2;
-        font-weight: 400;
-    }
-    /* fin zona-2 */
-    /* ----------inicia capacitacion-------- */
-    /* -----inicio zona-3------ */
-    .zona-3 .capacitacion h5 {
-        font-size: 1rem;
-        line-height: 2;
-    }
-    .capacitacion ul {
-        font-size: 0.8rem;
-        line-height: 1.6;
-        font-weight: 400;
-    }
-    /* -------fin zona 3-------- */
-    /* fin servicios portada */
-    /* -------inicia zona-4----- */
-    .zona-4 .capa {
-        font-size: 1rem;
-        font-weight: 400;
-        text-align: center;
-    }
-    .zona-4 .capa h3 {
-        font-size: 1.5rem;
-    }
-
-    .zona-4 .capa h4 {
-        font-size: 1.2rem;
-    }
-    /*-------fin zona-4------ */
-    /*-------inicio zona-5------ */
-    .zona-5 .imagenes-cursos{
-        display: flex;
-        flex-direction: row;
-    }
-    /* fin zona-5 */
-    /* -----------------FIN SERVICIOS.HTML----------- */
-    /* --------------INICIO PRODUCTOS.HTML----------- */
-    /* inicia zona-2 y zona-2 desarrollo galeria */
-    .presentacion-productos div h2 {
-        font-size: 1.8rem;
-    }
-    .sub-titulo h3 {
-        font-size: 1.5rem;
-    }
-    
-    .gallery-container {
-        display:flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .gallery-container .item0{
-        display: none;
-    }
-    .gallery-container .item1{
-        display: none;
-    }
-    /* fin .zona-2-desarrollo galeria*/
-    /* inicia zona-3 nuestros productos */
-    .zona-3 .nuestros-productos {
-        font-size: 1rem;
-        font-weight: 400;
-    }
-
-    .zona-3 .nuestros-productos h3 {
-        font-size: 1.5rem;
-    }
-    /* Fin ZONA-3 NUESTROS-productos */
-    /* -----------FIN PRODUCTOS.HTML------- */
-
-    /* --------INICIA NOSOTROS.HTML--------*/
-    /* inicia zona-2 presentacion */
-    .presentacion-nosotros div h2 {
-        font-size: 1.8rem;
-    }
-    /*------Fin presentacion------*/
-    /* inicia zona-2-desarrollo */
-    .zona-2-desarrollo .somos {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: stretch;
-        align-items: flex-start;
-    }
-
-    .somos .rex {
-        width: 90%;
-        height: auto;
-    }
-
-    .somos .vivero {
-        width: 90%;
-        height: auto;
-    }
-    /*------Fin zona-2-desarrollo----*/
-    /* -----------inicio zona-4------------- */
-    /*----comienzo impacto-----*/
-    .impacto {
-        width: 90%;
-        height: 100%;
-    }
-
-    .impacto h3 {
-        font-size: 1.3rem;
-        line-height: 2.5rem;
-    }
-
-    .impacto p {
-        line-height: 2rem;
-        font-size: 0.8rem;
-    }
-
-    .impacto ul {
-        font-size: 1rem;
-    }
-    
-    .impacto img{
-        margin-left: 6%;
-    }
-    /*-------Fin impacto-----*/
-    /* -----------fin zona-4------------- */
-    /* FIN NOSOTROS-HTML */
-    /* INICIA CONTACTO.HTML */
-    .contacto h2 {
-        font-size: 1.8rem;
-    }
-    .ficha div h3 {
-        font-size: 1.5rem;
-    }
-    
-    .ficha div ul li {
-        font-size: 1.2rem;
-    }
-    
-    .ficha div ul li p {
-        font-size: 1rem;
-        line-height: 2rem;
-    }
-    .ficha div ul li iframe {
-        width: 80%;
-        height: auto;
-    }
-    /* FIN CONTACTO.HTML */
-}
-
- /* tablet */
-
-@media only screen and (min-width:451px) and (max-width:960px) {
-    body {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-auto-rows: auto;
-        overflow-x: hidden;
-    }
-    .encabezado div h1 {
-        font-size: 2.5rem;
-    }
-    .background-nav ul li a{
-        font-size: 0.8rem;
-        justify-items: center;
-    }
-    .nav-logo {
-        padding-left: 80%;
-    }
-    /* inicia ------index.html ------*/
-    /* inicia zona-2 presentacion y zona-2 desarrollo */
-    .presentacion div h2 {
-        font-size: 1.8rem;
-    }
-    .zona-2-desarrollo p {
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
-    .zona-2-desarrollo h3{
-        font-size: 1.5rem;
-        line-height: 2rem;
-    }
-    /* fin zona-2 */
-    /* inicia zona-3 temporada */
-    .zona-3 {
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-    .zona-3 .autumn{
-        width: 100%;
-        height: 100%;
-    }
-    .autumn .temporada {
-        width: 100%;
-        height: auto;
-    }
-    .temporada div p {
-    font-size: 1rem;
-    line-height: 1.6rem;
-    padding: 5%;
-    }
-    /* fin zona-3 temporada */
-    /* inicia zona-4 videos informativos */
-    body .zona-4 {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        width: 100%;
-        height: auto;
-    }
-    .zona-4 div h3 {
-        line-height: 3rem;
-        font-size: 1.2rem;
-    }
-    .zona-4 div iframe{
-        width: 80%;
-        height:auto;
-    }
-    /* fin zona-4 videos */
-    /* inicia zona-5 pasos */
-    .zona-5 {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 12;
-        grid-row-end: 16;
-    }
-    .pasos div {
-        font-size: 1.5rem;
-        line-height: 3rem;
-    }
-    /* fin zona-5 pasos */
-    /* inicia zona-6 footer */
-    .zona-6 {
-        grid-row-start: 16;
-        grid-row-end: 23;
-    }
-    footer .form-ubicacion {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        width: 100%;
-        height: auto;
-    }
-    footer .form-ubicacion form {
-        width: 100%;
-        height: 40vh;
-    }
-    footer .mapa {
-        width: 100%;
-        height: 40vh;
-        text-align: center;
-        line-height: 2.5rem;
-    }
-    footer .mapa iframe{
-        width: 80%;
-        height: 60%;
-    }
-
-    footer .redes h3 {
-        line-height: 0.5rem;
-        font-size: 1.5rem;
-        padding-top: 5%;
-    }
-    footer .redes a {
-        padding-left: 10%;
-        padding-top: 5%;
-    }
-    footer .redes a img{
-        width: 40%;
-        height: auto;
-    }
-    /* fin zona-6 footer */
-    /* ---------fin index html------ */
-    /* ----inicia servicios.html--- */
-    
-    /* zona-2 servicios */
-
-    .servicios div h2 {
-        font-size: 1.8rem;
-    }
-    .zona-2-desarrollo h3{
-        line-height: 2rem;
-        font-size: 1.5rem;
-    } 
-    .zona-2-desarrollo h4 {
-        line-height: 2rem;
-        font-size: 1.2rem;
-    }
-    
-    .zona-2-desarrollo ul {
-        list-style: circle;
-        font-size: 1rem;
-        line-height: 2;
-        font-weight: 500;
-    }
-    /* fin zona-2 */
-    /* ----------inicia capacitacion-------- */
-    /* -----inicio zona-3------ */
-    .zona-3 .capacitacion h5 {
-        font-size: 1.2rem;
-        line-height: 2;
-    }
-    .capacitacion ul {
-        font-size: 1rem;
-        line-height: 1.8;
-        font-weight: 500;
-        margin: 0 5%;
-        padding: 0 5%;
-    }
-    /* -------fin zona 3-------- */
-    /* fin servicios portada */
-    /* -------inicia zona-4----- */
-    .zona-4 .capa {
-        font-size: 1.2rem;
-        font-weight: 500;
-        text-align: center;
-    }
-    .zona-4 .capa h3 {
-        font-size: 1.5rem;
-    }
-
-    .zona-4 .capa h4 {
-        font-size: 1.2rem;
-    }
-    /*-------fin zona-4------ */
-    /*-------inicio zona-5------ */
-    .zona-5 .imagenes-cursos{
-        display: flex;
-        flex-direction: row;
-    }
-    /* fin zona-5 */
-    /* -----------------FIN SERVICIOS.HTML----------- */
-    /* --------------INICIO PRODUCTOS.HTML----------- */
-    /* inicia zona-2 y zona-2 desarrollo galeria */
-    .presentacion-productos div h2 {
-        font-size: 1.8rem;
-    }
-    .sub-titulo h3 {
-        font-size: 1.5rem;
-    }
-    
-    .gallery-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 250px;
-        gap: 12px;
-    }
-    .gallery-container .item0{
-        display: none;
-    }
-    .gallery-container .item1{
-        display: none;
-    }
-    /* fin .zona-2-desarrollo galeria*/
-    /* inicia zona-3 nuestros productos */
-    .zona-3 .nuestros-productos {
-        width: 100%;
-        height: 100%;
-    }
-    .zona-3 .nuestros-productos p {
-        padding: 0 10% 5% 0;
-        font-size: 0.9rem;
-        font-weight: 400;
-        line-height: 2;
-        text-align: center;
-    }
-
-    .zona-3 .nuestros-productos h3 {
-        font-size: 1.5rem;
-    }
-    /* Fin ZONA-3 NUESTROS-productos */
-    /* -----------FIN PRODUCTOS.HTML------- */
-
-    /* --------INICIA NOSOTROS.HTML--------*/
-    /* inicia zona-2 presentacion */
-    .presentacion-nosotros div h2 {
-        font-size: 1.8rem;
-    }
-    /*------Fin presentacion------*/
-    /* inicia zona-2-desarrollo */
-    .zona-2-desarrollo .somos {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: stretch;
-        align-items: flex-start;
-    }
-
-    .somos .rex {
-        padding: 2% 10% 2% 15% ;
-        width: 80%;
-        height: auto;
-    }
-
-    .somos .vivero {
-        width: 90%;
-        height: auto;
-    }
-    /*------Fin zona-2-desarrollo----*/
-    .zona-3 img {
-        width: 100%;
-        height: auto;
-        padding-top: 30%;
-    }
-    /* -----------inicio zona-4------------- */
-    /*----comienzo impacto-----*/
-    .impacto {
-        width: 90%;
-        height: 100%;
-    }
-
-    .impacto h3 {
-        font-size: 1.3rem;
-        line-height: 2.5rem;
-    }
-
-    .impacto p {
-        padding: 5%;
-        line-height: 1.6rem;
-        font-size: 0.8rem;
-    }
-
-    .impacto ul {
-        font-size: 1rem;
-    }
-    
-    .impacto img{
-        margin-left: 6%;
-    }
-    /*-------Fin impacto-----*/
-    /* -----------fin zona-4------------- */
-    /* FIN NOSOTROS-HTML */
-    /* INICIA CONTACTO.HTML */
-    .contacto h2 {
-        font-size: 1.8rem;
-    }
-    .ficha div h3 {
-        font-size: 1.5rem;
-    }
-    
-    .ficha div ul li {
-        font-size: 1.2rem;
-    }
-    
-    .ficha div ul li p {
-        font-size: 1rem;
-        line-height: 2rem;
-    }
-    /* FIN CONTACTO.HTML */
-}

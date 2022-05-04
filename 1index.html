@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- css styles -->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="imagenes/tiranosaurio.ico" type="image/x-icon">
     <!-- link de animation.css/CDN -->
@@ -17,105 +21,128 @@
 
 <body>
     <!-- Inicia header -->
-    <div class="zona-1">
-        <header class="encabezado">
-            <div>
-                <img src="imagenes/dinosaurio.png" alt="logo" width="10%" height="auto"
-                    class="animate__animated animate__backInLeft">
-                <h1 class="animate__animated animate__bounce">Vivero SucuRex</h1>
-                <img src="imagenes/planta.png" alt="plantalo" width="10%" height="auto"
-                    class="animate__animated animate__backInRight">
-            </div>
-            <hr>
-            <nav class="background-nav">
-                <ul>
-                    <li><a href="1index.html">Inicio</a></li>
-                    <li><a href="2servicios.html">Servicios</a></li>
-                    <li><a href="3productos.html">Productos </a></li>
-                    <li> <a href="4nosotros.html">Nosotros</a></li>
-                    <li> <a href="5contacto.html">Contacto </a></li>
-                    <li> <a href="https://es.wikipedia.org/wiki/Suculenta" target="_blank">Que es una suculenta? </a>
-                    </li>
-                </ul>
-                <!--link del logo de whatsaap solo de prueba. Buscar como se linkea a un numero en particular-->
-                <a class="nav-logo" href="https://web.whatsapp.com/" target="_blank">
+
+    <header class="encabezado">
+        <div>
+            <img src="imagenes/dinosaurio.png" alt="logo" width="10%" height="auto"
+                class="animate__animated animate__backInLeft">
+            <h1 class="animate__animated animate__bounce">Vivero SucuRex</h1>
+            <img src="imagenes/planta.png" alt="plantalo" width="10%" height="auto"
+                class="animate__animated animate__backInRight">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand logotipo" href="#">logo/espacio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end background-nav" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="1index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="2servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="3productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="4nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="5contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <!--link del logo de whatsaap solo de prueba. Buscar como se linkea a un numero en particular-->
+                <a class="whatsaap-logo" href="https://web.whatsapp.com/" target="_blank">
                     <img src="imagenes/whatsapp.png" alt="whatsaap" width="50%" height="auto">
                 </a>
-            </nav>
-        </header>
-    </div>
-    <!-- fin nav  -->
-    <!-- inicia pseudo-main -->
-    <div class="zona-2">
-        <section class="presentacion">
-            <div>
-                <h2>Adopta una planta, dale vida a tu hogar</h2>
+                </div>
             </div>
-        </section>
-    </div>
-    <section class="zona-2-desarrollo">
-        <h3>Un hogar con plantas es maravilloso!!!</h3>
-        <p>Si hay plantas hay vida. Es por ello que llenamos nuestras casas «de verde», tenemos huertos urbanos y las
-            terrazas están pobladas de pequeñas macetas. Aunque las plantas requieran muchos cuidados "no solo regarlas,
-            sino también debemos preocuparnos de en qué lugar ponerlas para que tengan la mejor luz, darles nutrientes,
-            pulverizarlas..." seguimos comprándolas y regalándolas.</p>
-        <p>Y es que, las plantas siempre han formado parte de nuestra vida. La especie humana ha evolucionado en un
-            ambiente natural, en la que se cumplen los ciclos vitales: los animales crecen, las flores pasan de flor a
-            fruto... nuestro entorno perfecto es tradicionalmente la naturaleza, y por ello colmar de plantas nuestro
-            hogar es un paso natural.</p>
-    </section>
-    <!-- fin pseudo-main -->
-    <!-- inicia otoño -->
-    <section class="zona-3">
-        <div class="autumn">
-            <section class="temporada">
-                <div data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                    <p> Se acerca la temporada de frio</p>
-                    <p>Veni a conocer nuestro vivero de otoño-invierno!!!</p>
-                    <p>No descuides tu jardin en esta epoca del año...</p>
-                    <p>Descubre la belleza de cada estacion,</p>
-                    <p> dale vida a cada dia!!!</p>
+        </nav>
+    </header>
+    <!-- fin nav  -->
+    <main>
+        <!-- inicia pseudo-main -->
+        <div class="zona-2">
+            <section class="presentacion">
+                <div>
+                    <h2>Adopta una planta, dale vida a tu hogar</h2>
                 </div>
             </section>
         </div>
-    </section>
-    <aside class="zona-4">
-        <div>
-            <!--Seccion videos informativos, lado derecho de la pagina-->
-            <h3>Tips para que tus plantas sobrevivan al otoño/invierno</h3>
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/o_pqqEGyxvo"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <h3>Como cuidar cactus y suculentas dentro de casa</h3>
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/Umrazq1V9NA"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
-    </aside>
-    <!-- fin otoño -->
-    <!-- inicia adopta -->
-    <section class="zona-5">
-        <!--seccion-pasos-->
-        <div class="pasos">
-            <div>
-                <p>Adopta una planta...</p>
-                <img src="imagenes/maceta.png" alt="adopta" width="200" height="200" data-aos="fade-up-right">
-                <p>Nosotros te la enviamos...</p>
-                <img src="imagenes/logistica.png" alt="envio" width="200" height="200" data-aos="fade-up-left">
-                <p>Te damos un instructivo para cuidarla!!!</p>
-                <img src="imagenes/lista-de-verificacion.png" alt="instrucciones" width="200" height="200"
-                    data-aos="fade-up-right">
-                <img src="imagenes/estudiar.png" alt="instrucciones" width="200" height="200" data-aos="fade-up-right">
+        <section class="zona-2-desarrollo">
+            <h3>Un hogar con plantas es maravilloso!!!</h3>
+            <p>Si hay plantas hay vida. Es por ello que llenamos nuestras casas «de verde», tenemos huertos urbanos y
+                las
+                terrazas están pobladas de pequeñas macetas. Aunque las plantas requieran muchos cuidados "no solo
+                regarlas,
+                sino también debemos preocuparnos de en qué lugar ponerlas para que tengan la mejor luz, darles
+                nutrientes,
+                pulverizarlas..." seguimos comprándolas y regalándolas.</p>
+            <p>Y es que, las plantas siempre han formado parte de nuestra vida. La especie humana ha evolucionado en un
+                ambiente natural, en la que se cumplen los ciclos vitales: los animales crecen, las flores pasan de flor
+                a
+                fruto... nuestro entorno perfecto es tradicionalmente la naturaleza, y por ello colmar de plantas
+                nuestro
+                hogar es un paso natural.</p>
+        </section>
+        <!-- fin pseudo-main -->
+        <!-- inicia otoño -->
+        <section class="zona-3">
+            <div class="autumn">
+                <section class="temporada">
+                    <div data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <p> Se acerca la temporada de frio</p>
+                        <p>Veni a conocer nuestro vivero de otoño-invierno!!!</p>
+                        <p>No descuides tu jardin en esta epoca del año...</p>
+                        <p>Descubre la belleza de cada estacion,</p>
+                        <p> dale vida a cada dia!!!</p>
+                    </div>
+                </section>
             </div>
-        </div>
-        <!--fin-pasos-->
-        <!--inicio separador-->
-        <div class="separador1">
-        </div>
-        <!--Fin separador-->
-    </section>
+        </section>
+        <aside class="zona-4">
+            <div>
+                <!--Seccion videos informativos, lado derecho de la pagina-->
+                <h3>Tips para que tus plantas sobrevivan al otoño/invierno</h3>
+                <iframe width="auto" height="auto" src="https://www.youtube.com/embed/o_pqqEGyxvo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <h3>Como cuidar cactus y suculentas dentro de casa</h3>
+                <iframe width="auto" height="auto" src="https://www.youtube.com/embed/Umrazq1V9NA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </aside>
+        <!-- fin otoño -->
+        <!-- inicia adopta -->
+        <section class="zona-5">
+            <!--seccion-pasos-->
+            <div class="pasos">
+                <div>
+                    <p>Adopta una planta...</p>
+                    <img src="imagenes/maceta.png" alt="adopta" width="200" height="200" data-aos="fade-up-right">
+                    <p>Nosotros te la enviamos...</p>
+                    <img src="imagenes/logistica.png" alt="envio" width="200" height="200" data-aos="fade-up-left">
+                    <p>Te damos un instructivo para cuidarla!!!</p>
+                    <img src="imagenes/lista-de-verificacion.png" alt="instrucciones" width="200" height="200"
+                        data-aos="fade-up-right">
+                    <img src="imagenes/estudiar.png" alt="instrucciones" width="200" height="200"
+                        data-aos="fade-up-right">
+                </div>
+            </div>
+            <!--fin-pasos-->
+            <!--inicio separador-->
+            <div class="separador1">
+            </div>
+            <!--Fin separador-->
+        </section>
+    </main>
     <!-- fin adopta -->
     <footer class="zona-6">
         <!--FORMULARIO-->
@@ -178,6 +205,13 @@
     <script>
         AOS.init();
     </script>
+    <!-- script bootstap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
