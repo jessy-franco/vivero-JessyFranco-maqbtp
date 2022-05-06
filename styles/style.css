@@ -11,12 +11,15 @@ html {
     padding: 0;
     box-sizing: content-box;
 }
-
+body{
+    background-color: #dbedc872;
+}
 /* INICIA INDEX.HTML */
 /* inicia header */
-header{
+header {
     font-family: 'EB Garamond', serif;
 }
+
 .encabezado div {
     display: flex;
     justify-content: space-around;
@@ -37,7 +40,8 @@ header{
 .encabezado div img {
     padding: 5% 0% 5% 0%;
 }
-.animate__animated .animate__backInLeft{
+
+.animate__animated .animate__backInLeft {
     --animate-duration: 2s;
 }
 
@@ -45,9 +49,10 @@ header{
 /* fin header */
 /* inicia nav */
 
-.logotipo{
+.logotipo {
     visibility: hidden;
 }
+
 .background-nav {
     display: flex;
     align-items: center;
@@ -70,18 +75,13 @@ header{
     text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
-} 
+}
 
 
 /* fin nav */
 /* ------------fin zona-1 header y nav-------- */
 /* -----------inicia pseudo-main Zona-2-------*/
 .zona-2 {
-    grid-area: zona-2;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 6;
     width: 100%;
     height: auto;
 }
@@ -95,7 +95,9 @@ header{
     width: 100%;
     height: 20vh;
     padding: 2% 0% 50% 0%;
+    font-family: 'EB Garamond', serif;
 }
+
 .whatsaap-logo {
     position: fixed;
     margin-top: 20%;
@@ -113,18 +115,16 @@ header{
     line-height: 1.6rem;
     width: 100%;
     height: auto;
+    font-family: 'EB Garamond', serif;
 }
+
 .zona-2-desarrollo {
-    grid-area: zona-2-desarrollo;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 6;
-    grid-row-end: 9;
     background: rgb(167, 189, 145);
     background: linear-gradient(0deg, rgba(167, 189, 145, 0.774) 2%, rgba(173, 194, 169, 0.772) 61%);
-    width: 98%;
+    width: 100%;
     height: auto;
     padding: 4% 1%;
+    font-family: 'EB Garamond', serif;
 }
 
 .zona-2-desarrollo p {
@@ -134,6 +134,7 @@ header{
     font-style: italic;
     font-weight: 550;
     padding: 0.5% 5%;
+    font-family: 'EB Garamond', serif;
 }
 
 .zona-2-desarrollo h3 {
@@ -142,9 +143,12 @@ header{
     font-size: 1.5rem;
     font-weight: bold;
     padding: 1%;
+    font-family: 'EB Garamond', serif;
 }
-.zona-2-desarrollo ul li{
+
+.zona-2-desarrollo ul li {
     font-size: 1rem;
+    font-family: 'EB Garamond', serif;
 }
 
 /* fin presentacion/portada */
@@ -152,25 +156,15 @@ header{
 /*------inicia zona-3 temporada----- */
 
 .zona-3 {
-    grid-area: zona-3;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 9;
-    grid-row-end: 12;
-    width: 100%;
-    height: auto;
-    background-color: #DDFFBC;
+    /* margin: 2%; */
+    /*     background-color: #DDFFBC; */
 }
 
 /*inicia otoño */
 .autumn {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: stretch;
-    width: 100%;
-    height: auto;
-    background-color: rgba(255, 192, 203, 0.797);
+    align-items: center;
 }
 
 .autumn .temporada {
@@ -197,6 +191,7 @@ header{
     font-size: 1.5rem;
     line-height: 3rem;
     margin: 4.5% 2%;
+    font-family: 'EB Garamond', serif;
 }
 
 /* fin otoño */
@@ -204,15 +199,9 @@ header{
 /* -----------inicia zona-4 aside/videos----------*/
 
 .zona-4 {
-    grid-area: zona-4;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 9;
-    grid-row-end: 12;
-    width: 100%;
-    height: auto;
     background: rgb(173, 175, 173);
     background: linear-gradient(0deg, rgba(173, 175, 173, 1) 2%, rgba(173, 194, 169, 1) 96%);
+    margin: 1%;
 }
 
 .zona-4 div {
@@ -231,17 +220,13 @@ header{
     font-size: 1.2rem;
     color: rgb(80, 78, 78);
     text-align: center;
+    font-family: 'EB Garamond', serif;
 }
 
 /* ---------fin zona-4--------------- */
 /* ---------inicia zona-5 pasos----- */
 
 .zona-5 {
-    grid-area: zona-5;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 12;
-    grid-row-end: 16;
     background-color: #FEFFDE;
     width: 100%;
     height: auto;
@@ -265,29 +250,21 @@ header{
     display: inline-block;
     text-align: center;
     margin: 5%;
-
+    font-family: 'EB Garamond', serif;
 }
 
 /*-------------Fin zona-5 pasos-----------*/
 /*--------- inicia zona-6 footer-------- */
-.zona-6 {
-    grid-area: zona-6;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 16;
-    grid-row-end: 21;
-    width: 100%;
-    height: auto;
-}
 
 /* inicia formulario */
 footer {
     display: grid;
     grid-template-columns: repeat(4 1fr);
     grid-auto-rows: auto;
-    grid-template-areas:"zona0 zona0 zona0 zona0" "zona1 zona1 zona2 zona2" "zona 3 zona3 zona3 zona3" "zona4 zona4 zona4 zona4";
+    grid-template-areas: "zona0 zona0 zona0 zona0" "zona1 zona1 zona2 zona2" "zona 3 zona3 zona3 zona3" "zona4 zona4 zona4 zona4";
     overflow-x: hidden;
 }
+
 .separador1 {
     grid-area: zona0;
     grid-column-start: 1;
@@ -301,6 +278,7 @@ footer {
     background-size: cover;
     padding: 5%;
 }
+
 footer .form-ubicacion {
     grid-area: zona1;
     grid-column-start: 1;
@@ -320,6 +298,7 @@ footer .form-ubicacion form h3 {
     text-align: center;
     color: green;
     font-style: italic;
+    font-family: 'EB Garamond', serif;
 }
 
 footer .form-ubicacion form ul li {
@@ -329,7 +308,7 @@ footer .form-ubicacion form ul li {
     text-align: center;
     font-size: 0.8rem;
     line-height: 1.6rem;
-    font-family:'EB Garamond', serif;
+    font-family: 'EB Garamond', serif;
 }
 
 /*----FIn formulario*/
@@ -342,26 +321,31 @@ footer .mapa {
     grid-row-end: 4;
     width: 100%;
     height: auto;
-    color: #173e11;
     background-color: #adc2a9c1;
-    padding: 5% 10%;
-    text-align: center;
-    font-size: 0.8rem;
-    font-family: 'EB Garamond', serif;;
-    line-height: 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+footer .mapa h3{
+    color: #173e11;
+    padding: 3% 10%;
+    margin-right: 3%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'EB Garamond', serif;
+    line-height: 2rem;
+}
+
 footer .mapa iframe{
-    width: 50%;
-    height: 60%;
-   /*  padding-right: 5%; */
+    width: 60%;
+    height: 45%;
+    margin-right: 5%;
+    /*  padding-right: 5%; */
 }
 
 footer .redes {
-    grid-area:zona3;
+    grid-area: zona3;
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 4;
@@ -370,12 +354,14 @@ footer .redes {
     height: auto;
     display: flex;
     justify-content: space-around;
-    align-items: flex-start; 
+    align-items: flex-start;
     background-color: #FEFFDE;
     padding: 5%;
     width: 90%;
     height: auto;
+    font-family: 'EB Garamond', serif;
 }
+
 footer .redes a {
     padding-left: 10%;
 }
@@ -386,12 +372,13 @@ footer .redes h3 {
     text-align: center;
     line-height: 1.6rem;
     font-size: 2rem;
+    font-family: 'EB Garamond', serif;
 }
 
 /*-----Fin mapa y redes---*/
 /*---Inicio piecito---*/
 footer .pie {
-    grid-area:zona4;
+    grid-area: zona4;
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 7;
@@ -400,14 +387,17 @@ footer .pie {
     height: auto;
     background-color: #99A799;
     line-height: 1.6rem;
+    font-family: 'EB Garamond', serif;
 }
+
 /*---Fin piecito---*/
 /*Fin footer*/
 /*-------------FIN INDEX--------- */
 /* -------------INICIA SERVICIOS.HTML---------- */
 /* --------Inicia zona-2 servicios-------- */
 /* inicia servicios/portada */
-.zona-2 .servicios {
+
+.servicios {
     background-image: url(https://images.pexels.com/photos/68470/pexels-photo-68470.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
     background-position: center;
     background-repeat: no-repeat;
@@ -428,13 +418,15 @@ footer .pie {
     width: 100%;
     height: auto;
 }
-.zona-2-desarrollo h3{
+
+.zona-2-desarrollo h3 {
     color: #466142;
     line-height: 3rem;
     font-size: 2rem;
     font-weight: bold;
     padding: 1%;
-} 
+}
+
 .zona-2-desarrollo h4 {
     color: #466142;
     line-height: 3rem;
@@ -458,16 +450,23 @@ footer .pie {
 /* fin servicios portada */
 /* ----------inicia capacitacion-------- */
 /* -----inicio zona-3------ */
-.zona-3 .capacitacion {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-    width: 100%;
-    height: 100%;
+.zona-3 .img-car {
+    margin: 5%;
 }
 
-.zona-3 .capacitacion h5 {
+.zona-3 .capacitacion .desarrollo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    padding: 2%;
+    background-color: #ddffbcba; 
+}
+
+.zona-3 .capacitacion .desarrollo h5 {
     font-size: 1.4rem;
     line-height: 2;
     text-align: center;
@@ -476,7 +475,7 @@ footer .pie {
     padding: 6% 0 4% 0;
 }
 
-.capacitacion ul {
+.capacitacion .desarrollo ul {
     list-style: circle;
     font-size: 1.2rem;
     color: #52734D;
@@ -487,20 +486,20 @@ footer .pie {
     padding: 3%;
 }
 
-/* -------fin zona 3-------- */
-/* -------inicia zona-4----- */
-.zona-4 .capa {
+.capa {
+    background: rgb(173, 175, 173);
+    background: linear-gradient(0deg, rgba(173, 175, 173, 1) 2%, rgba(173, 194, 169, 1) 96%);
     font-size: 1.2rem;
     color: #466142;
     line-height: 1.6;
     text-align: center;
     font-style: italic;
     font-weight: 500;
-    margin-top: 10%;
+    margin: 2% 0;
     padding-top: 5%;
 }
 
-.zona-4 .capa h3 {
+.capa h3 {
     font-size: 1.8rem;
     line-height: 2;
     text-align: center;
@@ -508,17 +507,22 @@ footer .pie {
     color: #466142;
 }
 
-.zona-4 .capa h4 {
+.capa h4 {
     font-size: 1.5rem;
     line-height: 2;
     text-align: center;
     font-style: italic;
     color: #466142;
-    padding: 8% 0 20% 0;
+    padding: 8% 0 10% 0;
 }
-
-.zona-5 .boton {
-    width: 90%;
+/* boton en footer */
+.boton {
+    grid-area:zona0;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
     height: auto;
     background-image: url(https://images.pexels.com/photos/1379627/pexels-photo-1379627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-position: bottom;
@@ -526,15 +530,18 @@ footer .pie {
     padding: 5%;
     text-align: center;
 }
+
 .boton a {
     background-color: #DDFFBC;
     text-decoration: none;
     color: #52734D;
     padding: 2%;
+    margin-right: 6%;
     border: 2px solid #52734D;
     border-radius: 20px;
 }
-.boton a:hover{
+
+.boton a:hover {
     background-color: #1a47136c;
     color: #DDFFBC;
     padding: 4%;
@@ -582,30 +589,9 @@ footer .pie {
     text-align: center;
     line-height: 2rem;
 }
-
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 300px;
-    gap: 15px;
-    background-color: #99A799;
-}
-
-.galeria-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.gallery-container .item0 {
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-
-.gallery-container .item1 {
-    grid-row-start: 3;
-    grid-row-end: 5;
-
+.car-img{
+    width: 75%;
+    height: auto;
 }
 
 /* fin .zona-2-desarrollo galeria productos */
@@ -642,8 +628,15 @@ footer .pie {
 }
 
 /* fin zona-4 publi-imagenes */
-/* Inicia zona-5 boton de descarga/separador */
+/* Inicia boton de descarga/separador */
 .boton2 {
+    grid-area: zona0;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+    height: auto;
     width: 90%;
     height: auto;
     background-image: url(https://images.pexels.com/photos/2968327/pexels-photo-2968327.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
@@ -661,16 +654,17 @@ footer .pie {
     border: 2px solid green;
     border-radius: 20px;
 }
-.boton2 a:hover{
+
+.boton2 a:hover {
     background-color: #1a47136c;
-    color: #DDFFBC; 
+    color: #DDFFBC;
     padding: 4%;
-    border: 4px solid #DDFFBC; 
+    border: 4px solid #DDFFBC;
     border-radius: 20px;
-    font-size: 2rem; 
+    font-size: 2rem;
     transform: scale(1);
     transition: all 2s;
-} 
+}
 
 /* fin zona-5 boton de descarga/separador */
 /*----Fin publicidad productos------*/
@@ -900,4 +894,3 @@ footer .pie {
 
 /*------fin separador-----*/
 /*------FIN CONTACTO HTML-----*/
-
