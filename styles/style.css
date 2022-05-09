@@ -258,7 +258,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(4 1fr);
     grid-auto-rows: auto;
-    grid-template-areas: "zona0 zona0 zona0 zona0""zona1 zona1 zona2 zona2""zona 3 zona3 zona3 zona3""zona4 zona4 zona4 zona4";
+    grid-template-areas: "zona0 zona0 zona0 zona0"  "zona1 zona1 zona2 zona2" "zona 3 zona3 zona3 zona3" "zona4 zona4 zona4 zona4";
     overflow-x: hidden;
 }
 
