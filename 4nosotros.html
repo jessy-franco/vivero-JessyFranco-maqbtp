@@ -97,68 +97,78 @@
         </section>
         <!---Fin presentacion nosotros-->
     </section>
-    <section class="zona-3">
-        <img src="imagenes/rex.jpg" alt="nosotros3" width="85%" height="auto" class="dino" data-aos="flip-up"
-            data-aos-offset="300" data-aos-easing="ease-in-out" data-aos-duration="500">
-    </section>
-    <section class="zona-4">
-        <!--Inicia impacto-->
-        <section class="impacto">
-            <h3>El impacto de la naturaleza en la vida</h3>
-            <p>Cada planta y espacio verde transmite alegría y sentimientos que no se dan en ningún otro lado.</p>
-            <p>Sé parte del cambio verde que necesitamos, veni a conocer nuestro vivero!!!</p>
-            <p> Descarga el catalogo de productos y plantas, se actualiza todos los meses con nuevos productos y precios
-                siempre actualizados</p>
-            <p> Capacitate con nosotros a traves de nuestros cursos y talleres, contamos con modalidad online,
-                presencial y mixta</p>
-            <h3>Porque los espacios verdes urbanos son importantes?</h3>
-            <ul>
-                <li>- Ayudan a combatir la contaminación</li>
-                <li>- Mejoran el bienestar emocional</li>
-                <li>- Mejoran la salud física</li>
-                <li>- Fomentan la vida al aire libre</li>
-                <li>- Aumentan la conciencia ambiental</li>
-            </ul>
-            <img src="imagenes/sucufinal1.jpeg" alt="sucuvioleta" width="90%" height="auto">
-        </section>
-    </section>
-    <!--Fin impacto-->
-    <section class="zona-5">
-        <div class="separador2">
+    <section class="zona-3 container">
+        <div class="row">
+            <img src="imagenes/rex.jpg" alt="nosotros3" width="60%" height="80%" class="dino col-lg-6"
+                data-aos="flip-up" data-aos-offset="300" data-aos-easing="ease-in-out" data-aos-duration="500">
+            <section class="col impacto">
+                <h3>El impacto de la naturaleza en la vida</h3>
+                <p>Cada planta y espacio verde transmite alegría y sentimientos que no se dan en ningún otro lado.</p>
+                <p>Sé parte del cambio verde que necesitamos, veni a conocer nuestro vivero!!!</p>
+                <p> Descarga el catalogo de productos y plantas, se actualiza todos los meses con nuevos productos y
+                    precios
+                    siempre actualizados</p>
+                <p> Capacitate con nosotros a traves de nuestros cursos y talleres, contamos con modalidad online,
+                    presencial y mixta</p>
+                <h3>Porque los espacios verdes urbanos son importantes?</h3>
+                <ul>
+                    <li>- Ayudan a combatir la contaminación</li>
+                    <li>- Mejoran el bienestar emocional</li>
+                    <li>- Mejoran la salud física</li>
+                    <li>- Fomentan la vida al aire libre</li>
+                    <li>- Aumentan la conciencia ambiental</li>
+                </ul>
+            </section>
         </div>
     </section>
+    <!--Fin impacto-->
+    <!-- Fin pseudo-main -->
     <!-- inicio footer -->
     <footer>
         <!--inicio separador-->
-        <div class="separador1 zona0">
+        <div class="separador2 zona0">
         </div>
         <!--Fin separador-->
         <!--FORMULARIO-->
         <div class="form-ubicacion zona1">
-            <form>
-                <h3>Consultenos</h3>
-                <ul>
-                    <li>
-                        <label for="name">Nombre: </label>
-                        <input type="text" name="Nombre">
-                    </li>
-                    <li>
-                        <label for="mail">Mail:</label>
-                        <input type="text" name="mail">
-                    </li>
-                    <li>
-                        <label for="phone">Telefono:</label>
-                        <input type="text" name="phone">
-                    </li>
-                    <li>
-                        <!--La etiqueta "textarea" se usa sola, es decir no se usa con input-->
-                        <!--Placeholder sirve para que la referencia que quiero poner se sobreescriba con el mensaje del usuario-->
-                        <p>Dejanos un mensaje:</p>
-                        <textarea name="message" placeholder="Describe el asunto y tu consulta. Gracias"></textarea>
-                    </li>
-                </ul>
-                <pre>                                      <input type="submit" value="Enviar"></pre>
-            </form>
+            <h3>Consultanos</h3>
+            <div class="form">
+                <div class="mb-3 container">
+                    <label for="exampleFormControlInput1" class="form-label lab">Nombre</label>
+                    <div class="row">
+                        <div class="col-lg-10 col-md-6 col-sm-6">
+                            <input type="name" class="form-control" id="exampleFormControlInput1"
+                                placeholder="nombre y apellido">
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 container">
+                    <label for="exampleFormControlInput1" class="form-label lab">Mail</label>
+                    <div class="row">
+                        <div class="col-lg-10 col-md-6 col-sm-6">
+                            <input type="name" class="form-control" id="exampleFormControlInput2"
+                                placeholder="nombre@ejemplo.com">
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 container">
+                    <label for="exampleFormControlInput1" class="form-label lab">Telefono</label>
+                    <div class="row">
+                        <div class="col-lg-10 col-md-6 col-sm-6">
+                            <input type="phone" class="form-control" id="exampleFormControlInput3" placeholder="11xxxxxxxx">
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 container">
+                    <label for="exampleFormControlTextarea1" class="form-label lab">Dejanos un mensaje</label>
+                    <div class="row">
+                        <div class="col-lg-10 col-md-6 col-sm-6">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Describe el asunto y tu consulta. Gracias!"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!--fin FORMULARIO-->
 

@@ -99,40 +99,51 @@
             </div>
         </section>
     </section>
-    <section class="zona-5">
-        <div class="separador3"></div>
-    </section>
     <footer>
         <!--inicio separador-->
-        <div class="separador1 zona0">
+        <div class="separador3 zona0">
         </div>
         <!--Fin separador-->
         <!--FORMULARIO-->
         <div class="form-ubicacion zona1">
-            <form>
-                <h3>Consultenos</h3>
-                <ul>
-                    <li>
-                        <label for="name">Nombre: </label>
-                        <input type="text" name="Nombre">
-                    </li>
-                    <li>
-                        <label for="mail">Mail:</label>
-                        <input type="text" name="mail">
-                    </li>
-                    <li>
-                        <label for="phone">Telefono:</label>
-                        <input type="text" name="phone">
-                    </li>
-                    <li>
-                        <!--La etiqueta "textarea" se usa sola, es decir no se usa con input-->
-                        <!--Placeholder sirve para que la referencia que quiero poner se sobreescriba con el mensaje del usuario-->
-                        <p>Dejanos un mensaje:</p>
-                        <textarea name="message" placeholder="Describe el asunto y tu consulta. Gracias"></textarea>
-                    </li>
-                </ul>
-                <pre>                                      <input type="submit" value="Enviar"></pre>
-            </form>
+            <h3>Consultanos</h3>
+            <div class="form">
+                <div class="mb-3 container">
+                    <label for="exampleFormControlInput1" class="form-label lab">Nombre</label>
+                    <div class="row">
+                        <div class="col-lg-10 col-md-6 col-sm-6">
+                            <input type="name" class="form-control" id="exampleFormControlInput1"
+                                placeholder="nombre y apellido">
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 container">
+                    <label for="exampleFormControlInput1" class="form-label lab">Mail</label>
+                    <div class="row">
+                        <div class="col-lg-10 col-md-6 col-sm-6">
+                            <input type="name" class="form-control" id="exampleFormControlInput2"
+                                placeholder="nombre@ejemplo.com">
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 container">
+                    <label for="exampleFormControlInput1" class="form-label lab">Telefono</label>
+                    <div class="row">
+                        <div class="col-lg-10 col-md-6 col-sm-6">
+                            <input type="phone" class="form-control" id="exampleFormControlInput3" placeholder="11xxxxxxxx">
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 container">
+                    <label for="exampleFormControlTextarea1" class="form-label lab">Dejanos un mensaje</label>
+                    <div class="row">
+                        <div class="col-lg-10 col-md-6 col-sm-6">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Describe el asunto y tu consulta. Gracias!"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!--fin FORMULARIO-->
 

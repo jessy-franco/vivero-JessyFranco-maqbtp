@@ -117,13 +117,13 @@
             <div class="sub-titulo">
                 <h3>Macetas</h3>
             </div>
-            <div id="carouselExampleIndicators" class="carousel slide container car-img" data-bs-ride="carousel">
+            <div id="carouselExampleIndicators2" class="carousel slide container car-img" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
                         class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
@@ -137,12 +137,12 @@
                         <img src="galeria/2-macetas/3 (2).jpg" class="d-block w-100 img-fluid" alt="maceta3">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
@@ -154,13 +154,13 @@
             <div class="sub-titulo">
                 <h3>Insumos</h3>
             </div>
-            <div id="carouselExampleIndicators" class="carousel slide container car-img" data-bs-ride="carousel">
+            <div id="carouselExampleIndicators3" class="carousel slide container car-img" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                    <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0"
                         class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
@@ -174,12 +174,12 @@
                         <img src="galeria/3-insumos/7.jpg" class="d-block w-100 img-fluid" alt="im3">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
@@ -211,8 +211,6 @@
     </section>
     <section class="zona-4">
         <div class="publi-imagenes">
-            <img src="imagenes/produc4.jpeg" alt="Vivero1" width="90%" height="auto">
-            <img src="imagenes/vivero2.jpg" alt="vivero2" width="90%" height="auto">
             <img src="imagenes/herramienta.jpg" alt="vivero2" width="90%" height="auto">
         </div>
     </section>
@@ -228,30 +226,44 @@
         <!--Fin separador-->
         <!--FORMULARIO-->
         <div class="form-ubicacion zona1">
-            <form>
-                <h3>Consultenos</h3>
-                <ul>
-                    <li>
-                        <label for="name">Nombre: </label>
-                        <input type="text" name="Nombre">
-                    </li>
-                    <li>
-                        <label for="mail">Mail:</label>
-                        <input type="text" name="mail">
-                    </li>
-                    <li>
-                        <label for="phone">Telefono:</label>
-                        <input type="text" name="phone">
-                    </li>
-                    <li>
-                        <!--La etiqueta "textarea" se usa sola, es decir no se usa con input-->
-                        <!--Placeholder sirve para que la referencia que quiero poner se sobreescriba con el mensaje del usuario-->
-                        <p>Dejanos un mensaje:</p>
-                        <textarea name="message" placeholder="Describe el asunto y tu consulta. Gracias"></textarea>
-                    </li>
-                </ul>
-                <pre>                                      <input type="submit" value="Enviar"></pre>
-            </form>
+            <h3>Consultanos</h3>
+            <div class="form">
+                <div class="mb-3 container">
+                    <label for="exampleFormControlInput1" class="form-label lab">Nombre</label>
+                    <div class="row">
+                        <div class="col-lg-10 col-md-6 col-sm-6">
+                            <input type="name" class="form-control" id="exampleFormControlInput1"
+                                placeholder="nombre y apellido">
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 container">
+                    <label for="exampleFormControlInput1" class="form-label lab">Mail</label>
+                    <div class="row">
+                        <div class="col-lg-10 col-md-6 col-sm-6">
+                            <input type="name" class="form-control" id="exampleFormControlInput2"
+                                placeholder="nombre@ejemplo.com">
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 container">
+                    <label for="exampleFormControlInput1" class="form-label lab">Telefono</label>
+                    <div class="row">
+                        <div class="col-lg-10 col-md-6 col-sm-6">
+                            <input type="phone" class="form-control" id="exampleFormControlInput3" placeholder="11xxxxxxxx">
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 container">
+                    <label for="exampleFormControlTextarea1" class="form-label lab">Dejanos un mensaje</label>
+                    <div class="row">
+                        <div class="col-lg-10 col-md-6 col-sm-6">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Describe el asunto y tu consulta. Gracias!"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!--fin FORMULARIO-->
 

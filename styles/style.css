@@ -11,9 +11,11 @@ html {
     padding: 0;
     box-sizing: content-box;
 }
-body{
+
+body {
     background-color: #dbedc872;
 }
+
 /* INICIA INDEX.HTML */
 /* inicia header */
 header {
@@ -155,11 +157,6 @@ header {
 /*------ fin zona-2 pseudo-main------ */
 /*------inicia zona-3 temporada----- */
 
-.zona-3 {
-    /* margin: 2%; */
-    /*     background-color: #DDFFBC; */
-}
-
 /*inicia otoño */
 .autumn {
     display: flex;
@@ -261,7 +258,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(4 1fr);
     grid-auto-rows: auto;
-    grid-template-areas: "zona0 zona0 zona0 zona0" "zona1 zona1 zona2 zona2" "zona 3 zona3 zona3 zona3" "zona4 zona4 zona4 zona4";
+    grid-template-areas: "zona0 zona0 zona0 zona0""zona1 zona1 zona2 zona2""zona 3 zona3 zona3 zona3""zona4 zona4 zona4 zona4";
     overflow-x: hidden;
 }
 
@@ -287,26 +284,29 @@ footer .form-ubicacion {
     grid-row-end: 4;
     width: 100%;
     height: auto;
+    background-color: #ddffbc;
 }
 
 footer .form-ubicacion form {
-    background-color: #ddffbc;
+    width: 50%;
+    height: 60%;
     padding: 5%;
 }
 
-footer .form-ubicacion form h3 {
+footer .form-ubicacion h3 {
     text-align: center;
     color: green;
     font-style: italic;
     font-family: 'EB Garamond', serif;
+    padding-top: 5%;
 }
 
-footer .form-ubicacion form ul li {
+.lab {
     list-style: none;
     color: green;
     font-weight: bold;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 1.6rem;
     font-family: 'EB Garamond', serif;
 }
@@ -327,7 +327,8 @@ footer .mapa {
     justify-content: center;
     align-items: center;
 }
-footer .mapa h3{
+
+footer .mapa h3 {
     color: #173e11;
     padding: 3% 10%;
     margin-right: 3%;
@@ -337,7 +338,7 @@ footer .mapa h3{
     line-height: 2rem;
 }
 
-footer .mapa iframe{
+footer .mapa iframe {
     width: 60%;
     height: 45%;
     margin-right: 5%;
@@ -463,7 +464,7 @@ footer .pie {
     height: auto;
     margin-top: 5%;
     padding: 2%;
-    background-color: #ddffbcba; 
+    background-color: #ddffbcba;
 }
 
 .zona-3 .capacitacion .desarrollo h5 {
@@ -515,9 +516,10 @@ footer .pie {
     color: #466142;
     padding: 8% 0 10% 0;
 }
+
 /* boton en footer */
 .boton {
-    grid-area:zona0;
+    grid-area: zona0;
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
@@ -589,7 +591,8 @@ footer .pie {
     text-align: center;
     line-height: 2rem;
 }
-.car-img{
+
+.car-img {
     width: 75%;
     height: auto;
 }
@@ -799,7 +802,12 @@ footer .pie {
 /* -----------inicia zona-5--------- */
 /*-------comienzo separador-----*/
 .separador2 {
-    width: 90%;
+    grid-area: zona0;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
     height: auto;
     background-image: url(https://images.pexels.com/photos/10701381/pexels-photo-10701381.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-position: center;
@@ -884,6 +892,11 @@ footer .pie {
 /*----fin ficha-----*/
 /*-------Comienzo separador----*/
 .separador3 {
+    grid-area: zona0;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
     width: 100%;
     height: auto;
     background-image: url(https://images.pexels.com/photos/8892905/pexels-photo-8892905.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
